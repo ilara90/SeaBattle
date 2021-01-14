@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "projects": {
+    "battleship": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.json",
+            "aot": true,
+            "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+              },
+              "src/app/styles/app-styles.less"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "battleship:build"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "battleship",
+  "cli": {
+    "analytics": "530dc128-36cc-49ca-bb24-ed298a99cf49"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleExt": "less"
+    }
+  }
+}

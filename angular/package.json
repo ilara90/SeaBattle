@@ -1,0 +1,44 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "Battle Ship1!!1",
+  "author": "Dmitry Mizernik",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build"
+  },
+  "dependencies": {
+    "@angular/animations": "^11.0.8",
+    "@angular/common": "~11.0.0",
+    "@angular/compiler": "~11.0.0",
+    "@angular/core": "~11.0.0",
+    "@angular/forms": "~11.0.0",
+    "@angular/localize": "~11.0.0",
+    "@angular/platform-browser": "^11.0.7",
+    "@angular/platform-browser-dynamic": "~11.0.0",
+    "@angular/router": "~11.0.0",
+    "@progress/kendo-angular-buttons": "^6.0.0",
+    "@progress/kendo-angular-common": "^2.0.0",
+    "@progress/kendo-angular-inputs": "^7.0.0",
+    "@progress/kendo-angular-l10n": "^3.0.0",
+    "@progress/kendo-angular-popup": "^4.0.0",
+    "@progress/kendo-licensing": "^1.0.2",
+    "@progress/kendo-theme-default": "latest",
+    "rxjs": "~6.6.3",
+    "zone.js": "~0.11.3",
+    "@progress/kendo-angular-intl": "^3.0.0",
+    "@progress/kendo-drawing": "^1.5.12"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1100.0",
+    "@angular/cli": "~11.0.0",
+    "@angular/compiler-cli": "~11.0.0",
+    "@types/node": "~14.14.7",
+    "css-loader": "^2.1.0",
+    "less": "^4.1.0",
+    "mini-css-extract-plugin": "^1.3.3",
+    "style-loader": "^2.0.0",
+    "typescript": "~4.0.5"
+  }
+}
